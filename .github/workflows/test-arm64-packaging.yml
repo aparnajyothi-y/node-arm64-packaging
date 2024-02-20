@@ -10,4 +10,5 @@ jobs:
     with:
       tool-name: "node"
       tool-version: ${{ inputs.VERSION || '18.12.0' }}
+      publish-release: ${{ inputs.PUBLISH_RELEASES || false }}
     secrets: inherit
