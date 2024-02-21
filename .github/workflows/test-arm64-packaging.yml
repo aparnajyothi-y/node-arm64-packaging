@@ -9,6 +9,6 @@ jobs:
     uses: aparnajyothi-y/versions-package-tools/.github/workflows/build-tool-packages.yml@node-arm64-support
     with:
       tool-name: "node"
-      tool-version: ${{ inputs.VERSION || '18.12.0' }}
+      tool-version: ${{ inputs.VERSION }}
       publish-release: ${{ inputs.PUBLISH_RELEASES || false }}
     secrets: inherit
